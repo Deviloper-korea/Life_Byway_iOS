@@ -29,6 +29,7 @@
 		CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662062074AA6800F27ECE /* APIRouter.swift */; };
 		CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662082074AAAA00F27ECE /* EndPoint.swift */; };
 		CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */; };
+		CEED21B720752E65006720CE /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED21B620752E65006720CE /* Join.storyboard */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
 		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		CE1662062074AA6800F27ECE /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CE1662082074AAAA00F27ECE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestor.swift; sourceTree = "<group>"; };
+		CEED21B620752E65006720CE /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				B87AB27D206A7D440090A69D /* Post.storyboard */,
 				B87AB27F206A7D490090A69D /* Setting.storyboard */,
 				B87AB28E206A80EC0090A69D /* User.storyboard */,
+				CEED21B620752E65006720CE /* Join.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B87AB261206A61F30090A69D /* Assets.xcassets in Resources */,
 				B87AB25F206A61F30090A69D /* Main.storyboard in Resources */,
 				B87AB28F206A80EC0090A69D /* User.storyboard in Resources */,
+				CEED21B720752E65006720CE /* Join.storyboard in Resources */,
 				B87AB277206A78970090A69D /* Home.storyboard in Resources */,
 				B87AB27E206A7D440090A69D /* Post.storyboard in Resources */,
 			);
