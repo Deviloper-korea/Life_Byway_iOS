@@ -32,6 +32,7 @@
 		CEED21B720752E65006720CE /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED21B620752E65006720CE /* Join.storyboard */; };
 		CEED21BB20754A34006720CE /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21BA20754A34006720CE /* Encrypt.swift */; };
 		CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEED21BC20754BED006720CE /* CryptoSwift.framework */; };
+		CEED21BF20754C50006720CE /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21BE20754C50006720CE /* Regex.swift */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
 		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		CEED21B620752E65006720CE /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
 		CEED21BA20754A34006720CE /* Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
 		CEED21BC20754BED006720CE /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		CEED21BE20754C50006720CE /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +234,7 @@
 			children = (
 				CEF64326207276610013AF2A /* ResolutionCenter.swift */,
 				CEED21BA20754A34006720CE /* Encrypt.swift */,
+				CEED21BE20754C50006720CE /* Regex.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				B87AB288206A7F660090A69D /* PostViewController.swift in Sources */,
 				B87AB28C206A7F980090A69D /* SettingViewController.swift in Sources */,
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
+				CEED21BF20754C50006720CE /* Regex.swift in Sources */,
 				B87AB275206A77B80090A69D /* BaseTabBarController.swift in Sources */,
 				CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */,
 				CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */,
