@@ -25,8 +25,9 @@
 		B87AB28F206A80EC0090A69D /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87AB28E206A80EC0090A69D /* User.storyboard */; };
 		B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AB290206A811B0090A69D /* LoginViewController.swift */; };
 		B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AB293206A813B0090A69D /* JoinViewController.swift */; };
-		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
+		CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1662042074A3FC00F27ECE /* Alamofire.framework */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
+		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +51,9 @@
 		B87AB28E206A80EC0090A69D /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		B87AB290206A811B0090A69D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B87AB293206A813B0090A69D /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
-		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
+		CE1662042074A3FC00F27ECE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +73,7 @@
 			children = (
 				B87AB258206A61F30090A69D /* LifeByway */,
 				B87AB257206A61F30090A69D /* Products */,
+				CE1662032074A3FC00F27ECE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,21 +193,28 @@
 			path = User;
 			sourceTree = "<group>";
 		};
-
-		CEF64325207276230013AF2A /* Common */ = {
+		CE1662032074A3FC00F27ECE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEF64326207276610013AF2A /* ResolutionCenter.swift */,
+				CE1662042074A3FC00F27ECE /* Alamofire.framework */,
 			);
-			path = Common;
-            sourceTree = "<group>";
-        };
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEF6432220726F0A0013AF2A /* API */ = {
 			isa = PBXGroup;
 			children = (
 				CEF6432320726F680013AF2A /* APIConfiguration.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CEF64325207276230013AF2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEF64326207276610013AF2A /* ResolutionCenter.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +443,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 78N9H93U2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/LifeByway/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -448,7 +463,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 78N9H93U2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/LifeByway/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
