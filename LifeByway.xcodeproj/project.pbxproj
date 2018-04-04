@@ -30,6 +30,8 @@
 		CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662082074AAAA00F27ECE /* EndPoint.swift */; };
 		CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */; };
 		CEED21B720752E65006720CE /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED21B620752E65006720CE /* Join.storyboard */; };
+		CEED21BB20754A34006720CE /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21BA20754A34006720CE /* Encrypt.swift */; };
+		CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEED21BC20754BED006720CE /* CryptoSwift.framework */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
 		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		CE1662082074AAAA00F27ECE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestor.swift; sourceTree = "<group>"; };
 		CEED21B620752E65006720CE /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
+		CEED21BA20754A34006720CE /* Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
+		CEED21BC20754BED006720CE /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */,
+				CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +210,7 @@
 		CE1662032074A3FC00F27ECE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEED21BC20754BED006720CE /* CryptoSwift.framework */,
 				CE1662042074A3FC00F27ECE /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -225,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF64326207276610013AF2A /* ResolutionCenter.swift */,
+				CEED21BA20754A34006720CE /* Encrypt.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -239,6 +246,7 @@
 				B87AB252206A61F30090A69D /* Sources */,
 				B87AB253206A61F30090A69D /* Frameworks */,
 				B87AB254206A61F30090A69D /* Resources */,
+				CEED21B9207549AF006720CE /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +310,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEED21B9207549AF006720CE /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B87AB252206A61F30090A69D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -320,6 +347,7 @@
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
 				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
+				CEED21BB20754A34006720CE /* Encrypt.swift in Sources */,
 				CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */,
 				B87AB270206A76A50090A69D /* BaseViewController.swift in Sources */,
 			);
