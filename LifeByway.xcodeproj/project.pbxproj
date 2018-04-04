@@ -26,6 +26,9 @@
 		B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AB290206A811B0090A69D /* LoginViewController.swift */; };
 		B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87AB293206A813B0090A69D /* JoinViewController.swift */; };
 		CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1662042074A3FC00F27ECE /* Alamofire.framework */; };
+		CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662062074AA6800F27ECE /* APIRouter.swift */; };
+		CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662082074AAAA00F27ECE /* EndPoint.swift */; };
+		CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
 		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,9 @@
 		B87AB290206A811B0090A69D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B87AB293206A813B0090A69D /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		CE1662042074A3FC00F27ECE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CE1662062074AA6800F27ECE /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		CE1662082074AAAA00F27ECE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestor.swift; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				CEF6432320726F680013AF2A /* APIConfiguration.swift */,
+				CE1662062074AA6800F27ECE /* APIRouter.swift */,
+				CE1662082074AAAA00F27ECE /* EndPoint.swift */,
+				CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -302,9 +311,12 @@
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
 				B87AB275206A77B80090A69D /* BaseTabBarController.swift in Sources */,
 				CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */,
+				CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */,
 				B87AB25A206A61F30090A69D /* AppDelegate.swift in Sources */,
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
+				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
+				CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */,
 				B87AB270206A76A50090A69D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
