@@ -8,13 +8,18 @@
 
 import Foundation
 
-enum JoinError: Error {
+protocol ErrorMessagePresentable {
+    var message: String { get }
+}
+
+enum JoinError {
     
-    enum UserId: Error {
+    enum UserId: ErrorMessagePresentable {
+        
         case length
         case duplicate
         
-        var localizedDescription: String {
+        var message: String {
             switch self {
             case .length: return "아이디는 6자 이상 15자 이하만 가능합니다."
             case .duplicate: return "중복된 아이디입니다."
@@ -22,11 +27,11 @@ enum JoinError: Error {
         }
     }
     
-    enum Password: Error {
+    enum Password: ErrorMessagePresentable {
         case notEqualPasswordCheck
         case length
         
-        var localizedDescription: String {
+        var message: String {
             switch self {
             case .notEqualPasswordCheck: return "비밀번호 확인이 일치하지 않습니다."
             case .length: return "비밀번호는 8자 이상 16자 이하만 가능합니다."
@@ -34,17 +39,17 @@ enum JoinError: Error {
         }
     }
     
-    enum Nickname: Error {
+    enum Nickname: ErrorMessagePresentable {
         case length
         
-        var localizedDescription: String {
+        var message: String {
             switch self {
             case .length: return "닉네임을 입력해주세요."
             }
         }
     }
     
-    enum Email: Error {
+    enum Email: ErrorMessagePresentable {
         case regex
         
         var message: String {

@@ -35,10 +35,10 @@ extension JoinViewController {
                                 passwordCheck: passwordCheckTextField.text ?? "",
                                 email: emailTextField.text ?? "")
         
-        let verificationResult = JoinModel.shared.validate(joinInfo: joinInfo)
-        guard verificationResult == nil else {
+        let verificationError = JoinModel.shared.validate(joinInfo: joinInfo)
+        guard verificationError == nil else {
             // Toast or Label message
-            LBLogger.debug(.minseob, verificationResult?.localizedDescription)
+            LBLogger.debug(.minseob, verificationError?.message)
             return
         }
         

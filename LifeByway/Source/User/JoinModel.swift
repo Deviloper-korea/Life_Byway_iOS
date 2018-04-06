@@ -20,8 +20,7 @@ class JoinModel {
     
     static let shared = JoinModel()
     
-    
-    func validate(joinInfo: JoinInfo) -> Error? {
+    func validate(joinInfo: JoinInfo) -> ErrorMessagePresentable? {
         
         guard joinInfo.id.count >= 6 && joinInfo.id.count <= 15 else {
             return JoinError.UserId.length
