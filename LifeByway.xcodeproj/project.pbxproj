@@ -36,8 +36,10 @@
 		CEED21C220754DF7006720CE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21C120754DF7006720CE /* String+Extension.swift */; };
 		CEED21C420754E1B006720CE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21C320754E1B006720CE /* Collection+Extension.swift */; };
 		CEED21C620754E74006720CE /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21C520754E74006720CE /* JoinModel.swift */; };
+		CEED21C820771D9C006720CE /* JoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21C720771D9C006720CE /* JoinError.swift */; };
 		CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6432320726F680013AF2A /* APIConfiguration.swift */; };
 		CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF64326207276610013AF2A /* ResolutionCenter.swift */; };
+		CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9A6207742C80049F718 /* LBLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,8 +74,10 @@
 		CEED21C120754DF7006720CE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CEED21C320754E1B006720CE /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		CEED21C520754E74006720CE /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
+		CEED21C720771D9C006720CE /* JoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinError.swift; sourceTree = "<group>"; };
 		CEF6432320726F680013AF2A /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		CEF64326207276610013AF2A /* ResolutionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionCenter.swift; sourceTree = "<group>"; };
+		CEFEF9A6207742C80049F718 /* LBLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 				B87AB290206A811B0090A69D /* LoginViewController.swift */,
 				B87AB293206A813B0090A69D /* JoinViewController.swift */,
 				CEED21C520754E74006720CE /* JoinModel.swift */,
+				CEED21C720771D9C006720CE /* JoinError.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				CEF64326207276610013AF2A /* ResolutionCenter.swift */,
 				CEED21BA20754A34006720CE /* Encrypt.swift */,
 				CEED21BE20754C50006720CE /* Regex.swift */,
+				CEFEF9A6207742C80049F718 /* LBLogger.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */,
 				B87AB282206A7EA10090A69D /* HomeViewController.swift in Sources */,
 				B87AB285206A7F0E0090A69D /* MyPageViewController.swift in Sources */,
+				CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */,
 				B87AB288206A7F660090A69D /* PostViewController.swift in Sources */,
 				B87AB28C206A7F980090A69D /* SettingViewController.swift in Sources */,
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
@@ -366,6 +373,7 @@
 				CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */,
 				CEED21C220754DF7006720CE /* String+Extension.swift in Sources */,
 				CEED21C620754E74006720CE /* JoinModel.swift in Sources */,
+				CEED21C820771D9C006720CE /* JoinError.swift in Sources */,
 				CEED21C420754E1B006720CE /* Collection+Extension.swift in Sources */,
 				B87AB25A206A61F30090A69D /* AppDelegate.swift in Sources */,
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
@@ -519,8 +527,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LifeByway/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deviloper.LifeByway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -49,8 +49,15 @@
                                     <outlet property="delegate" destination="4Zq-Aj-YhC" id="ysM-FK-u3y"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VhE-fx-z1A">
+                                <rect key="frame" x="122" y="397" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seb-dK-H6C">
-                                <rect key="frame" x="122" y="404" width="145" height="30"/>
+                                <rect key="frame" x="122" y="437" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,7 +67,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eS-fS-Kbu">
-                                <rect key="frame" x="122" y="448" width="145" height="30"/>
+                                <rect key="frame" x="122" y="484" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -70,7 +77,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yf-R2-9NY">
-                                <rect key="frame" x="151" y="493" width="86" height="30"/>
+                                <rect key="frame" x="151" y="539" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SNS 인증버튼"/>
                                 <connections>
@@ -78,7 +85,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyy-tQ-veW">
-                                <rect key="frame" x="151" y="547" width="86" height="30"/>
+                                <rect key="frame" x="151" y="593" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="회원 가입 버튼"/>
                                 <connections>
@@ -97,6 +104,7 @@
                         <viewLayoutGuide key="safeArea" id="Whm-Ix-3Dn"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="VhE-fx-z1A" id="M4O-B3-RH2"/>
                         <outlet property="idTextField" destination="RKu-nq-Pnw" id="yBF-ma-mSj"/>
                         <outlet property="nicknameTextField" destination="sfc-Ol-Ob3" id="Pqe-Ka-sd0"/>
                         <outlet property="passwordCheckTextField" destination="3eS-fS-Kbu" id="JxE-yk-BSp"/>

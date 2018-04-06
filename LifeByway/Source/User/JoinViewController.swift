@@ -12,6 +12,7 @@ class JoinViewController: BaseViewController {
     
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
 }
@@ -28,6 +29,18 @@ extension JoinViewController {
     }
     
     @IBAction func joinButtonTapped(sender: UIButton) {
+        let joinInfo = JoinInfo(id: idTextField.text ?? "",
+                                nickname: nicknameTextField.text ?? "",
+                                password: passwordTextField.text ?? "",
+                                passwordCheck: passwordCheckTextField.text ?? "",
+                                email: emailTextField.text ?? "")
+        
+        let verificationResult = JoinModel.shared.validate(joinInfo: joinInfo)
+        guard verificationResult == nil else {
+            // Toast or Label message
+            LBLogger.debug(.minseob, verificationResult?.localizedDescription)
+            return
+        }
         
     }
 }

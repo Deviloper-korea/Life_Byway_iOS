@@ -1,0 +1,56 @@
+//
+//  JoinError.swift
+//  LifeByway
+//
+//  Created by Minseob Yoon on 2018. 4. 6..
+//  Copyright © 2018년 Deviloper. All rights reserved.
+//
+
+import Foundation
+
+enum JoinError: Error {
+    
+    enum UserId: Error {
+        case length
+        case duplicate
+        
+        var localizedDescription: String {
+            switch self {
+            case .length: return "아이디는 6자 이상 15자 이하만 가능합니다."
+            case .duplicate: return "중복된 아이디입니다."
+            }
+        }
+    }
+    
+    enum Password: Error {
+        case notEqualPasswordCheck
+        case length
+        
+        var localizedDescription: String {
+            switch self {
+            case .notEqualPasswordCheck: return "비밀번호 확인이 일치하지 않습니다."
+            case .length: return "비밀번호는 8자 이상 16자 이하만 가능합니다."
+            }
+        }
+    }
+    
+    enum Nickname: Error {
+        case length
+        
+        var localizedDescription: String {
+            switch self {
+            case .length: return "닉네임을 입력해주세요."
+            }
+        }
+    }
+    
+    enum Email: Error {
+        case regex
+        
+        var message: String {
+            switch self {
+            case .regex: return "이메일 형식이 올바르지 않습니다."
+            }
+        }
+    }
+}
