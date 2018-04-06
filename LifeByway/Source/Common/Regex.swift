@@ -10,10 +10,18 @@ import Foundation
 
 enum Regex {
     
+    case id(String)
     case email(String)
     
     func validate() -> Bool {
         switch self {
+        case .id(let id):
+            guard !id.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+                return false
+            }
+            let regexOfNotAllowedKorean = "^[a-zA-Z0-9]+$"
+            return NSPredicate(format: "SELF MATCHES %@", regexOfNotAllowedKorean).evaluate(with: id)
+            
         case .email(let address):
             guard !address.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
                 return false

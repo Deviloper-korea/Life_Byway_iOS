@@ -15,6 +15,12 @@ class JoinViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
 }
 
 // @IBAction
@@ -41,6 +47,7 @@ extension JoinViewController {
             LBLogger.debug(.minseob, verificationError?.message)
             return
         }
+        
         
     }
 }

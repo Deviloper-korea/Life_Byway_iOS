@@ -16,11 +16,13 @@ enum JoinError {
     
     enum UserId: ErrorMessagePresentable {
         
+        case regex
         case length
         case duplicate
         
         var message: String {
             switch self {
+            case .regex: return "아이디는 영문 + 숫자 조합만 가능합니다."
             case .length: return "아이디는 6자 이상 15자 이하만 가능합니다."
             case .duplicate: return "중복된 아이디입니다."
             }

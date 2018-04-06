@@ -22,6 +22,10 @@ class JoinModel {
     
     func validate(joinInfo: JoinInfo) -> ErrorMessagePresentable? {
         
+        guard Regex.id(joinInfo.id).validate() else {
+            return JoinError.UserId.regex
+        }
+        
         guard joinInfo.id.count >= 6 && joinInfo.id.count <= 15 else {
             return JoinError.UserId.length
         }
