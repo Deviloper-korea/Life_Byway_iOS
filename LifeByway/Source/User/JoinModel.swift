@@ -6,10 +6,11 @@
 //  Copyright © 2018년 Deviloper. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct JoinInfo {
     var id: String
+    var profileImage: Data
     var nickname: String
     var password: String
     var passwordCheck: String

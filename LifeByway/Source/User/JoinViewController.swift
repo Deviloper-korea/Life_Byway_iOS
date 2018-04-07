@@ -15,6 +15,7 @@ class JoinViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,7 +36,9 @@ extension JoinViewController {
     }
     
     @IBAction func joinButtonTapped(sender: UIButton) {
+        // - TODO: Default Image 변경하기
         let joinInfo = JoinInfo(id: idTextField.text ?? "",
+                                profileImage: UIImagePNGRepresentation(profileImageView.image ?? #imageLiteral(resourceName: "default")) ?? Data(),
                                 nickname: nicknameTextField.text ?? "",
                                 password: passwordTextField.text ?? "",
                                 passwordCheck: passwordCheckTextField.text ?? "",
@@ -48,7 +51,9 @@ extension JoinViewController {
             return
         }
         
-        
+        JoinDataProvider.requestJoin(joinInfo: joinInfo) { error in
+            
+        }
     }
 }
 

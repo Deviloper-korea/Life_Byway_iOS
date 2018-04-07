@@ -14,7 +14,7 @@ enum ServerEnvironment {
     
     var domain: String {
         switch self {
-        case .dev: return "http://13.125.236.45/"
+        case .dev: return "http://13.125.236.45"
         case .real: return ""
         }
     }

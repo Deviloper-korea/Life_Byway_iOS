@@ -109,6 +109,7 @@
                         <outlet property="nicknameTextField" destination="sfc-Ol-Ob3" id="Pqe-Ka-sd0"/>
                         <outlet property="passwordCheckTextField" destination="3eS-fS-Kbu" id="JxE-yk-BSp"/>
                         <outlet property="passwordTextField" destination="seb-dK-H6C" id="gPW-ki-Tly"/>
+                        <outlet property="profileImageView" destination="5QZ-br-hDC" id="WGj-zg-apT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htH-Kp-peE" userLabel="First Responder" sceneMemberID="firstResponder"/>
