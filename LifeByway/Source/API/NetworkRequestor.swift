@@ -12,7 +12,7 @@ struct NetworkRequestor {
     
     private static let manager = Alamofire.SessionManager.default
     
-    typealias Completion = ((Data?, Error?) -> Void)?
+    typealias Completion = ((Json?, Error?) -> Void)?
     static func request(_ api: APIRouter, completion: Completion) {
         requestInfoLog(about: api)
         manager.session.configuration.timeoutIntervalForRequest = 15
@@ -23,7 +23,12 @@ struct NetworkRequestor {
             case .success:
                 successLog(about: response)
                 if let data = response.data {
-                    completion?(data, nil)
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
+                        completion?(json, nil)
+                    } catch(let error) {
+                        completion?(nil, error)
+                    }
                 }
             case .failure(let error):
                 failureLog(about: response)
@@ -49,7 +54,12 @@ struct NetworkRequestor {
                     case .success:
                         successLog(about: response)
                         if let data = response.data {
-                            completion?(data, nil)
+                            do {
+                                let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
+                                completion?(json, nil)
+                            } catch(let error) {
+                                completion?(nil, error)
+                            }
                         }
                     case .failure(let error):
                         failureLog(about: response)

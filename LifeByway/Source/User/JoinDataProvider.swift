@@ -35,7 +35,7 @@ struct JoinDataProvider {
             switch self {
             case .join(let joinInfo):
                 return ["nickname": joinInfo.nickname,
-                        "image": joinInfo.profileImage,
+                        "imgLink": joinInfo.profileImage,
                         "email": joinInfo.email]
             }
         }
