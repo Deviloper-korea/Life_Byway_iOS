@@ -28,7 +28,10 @@ class JoinViewController: BaseViewController {
 extension JoinViewController {
     
     @IBAction func registerProfileImageButtonTapped(sender: UIButton) {
-        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
     }
     
     @IBAction func authButtonTapped(sender: UIButton) {
@@ -79,3 +82,18 @@ extension JoinViewController: UITextFieldDelegate {
         return true
     }
 }
+
+// UIImagePickerControllerDelegate
+extension JoinViewController: UIImagePickerControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            return
+        }
+        profileImageView.image = selectedImage
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+// UINavigationControllerDelegate
+extension JoinViewController: UINavigationControllerDelegate { }

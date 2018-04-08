@@ -44,6 +44,7 @@
 		CEFEF9AB207757AB0049F718 /* Key.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF9AA207757AB0049F718 /* Key.json */; };
 		CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9AE2079384B0049F718 /* CommonError.swift */; };
 		CEFEF9B12079C7680049F718 /* SNSAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9B02079C7680049F718 /* SNSAuthorizationManager.swift */; };
+		CEFEF9B3207A59390049F718 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9B2207A59390049F718 /* UserDefaultsKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		CEFEF9AA207757AB0049F718 /* Key.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Key.json; sourceTree = "<group>"; };
 		CEFEF9AE2079384B0049F718 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		CEFEF9B02079C7680049F718 /* SNSAuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSAuthorizationManager.swift; sourceTree = "<group>"; };
+		CEFEF9B2207A59390049F718 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 				CEED21BE20754C50006720CE /* Regex.swift */,
 				CEFEF9A6207742C80049F718 /* LBLogger.swift */,
 				CEFEF9AE2079384B0049F718 /* CommonError.swift */,
+				CEFEF9B2207A59390049F718 /* UserDefaultsKey.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
 				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
+				CEFEF9B3207A59390049F718 /* UserDefaultsKey.swift in Sources */,
 				CEED21BB20754A34006720CE /* Encrypt.swift in Sources */,
 				CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */,
 				B87AB270206A76A50090A69D /* BaseViewController.swift in Sources */,
