@@ -43,6 +43,7 @@
 		CEFEF9A920774F430049F718 /* JoinDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9A820774F430049F718 /* JoinDataProvider.swift */; };
 		CEFEF9AB207757AB0049F718 /* Key.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF9AA207757AB0049F718 /* Key.json */; };
 		CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9AE2079384B0049F718 /* CommonError.swift */; };
+		CEFEF9B12079C7680049F718 /* SNSAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9B02079C7680049F718 /* SNSAuthorizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		CEFEF9A820774F430049F718 /* JoinDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinDataProvider.swift; sourceTree = "<group>"; };
 		CEFEF9AA207757AB0049F718 /* Key.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Key.json; sourceTree = "<group>"; };
 		CEFEF9AE2079384B0049F718 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		CEFEF9B02079C7680049F718 /* SNSAuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSAuthorizationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				CEED21C520754E74006720CE /* JoinModel.swift */,
 				CEED21C720771D9C006720CE /* JoinError.swift */,
 				CEFEF9A820774F430049F718 /* JoinDataProvider.swift */,
+				CEFEF9B02079C7680049F718 /* SNSAuthorizationManager.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */,
+				CEFEF9B12079C7680049F718 /* SNSAuthorizationManager.swift in Sources */,
 				B87AB282206A7EA10090A69D /* HomeViewController.swift in Sources */,
 				CEFEF9A920774F430049F718 /* JoinDataProvider.swift in Sources */,
 				B87AB285206A7F0E0090A69D /* MyPageViewController.swift in Sources */,
