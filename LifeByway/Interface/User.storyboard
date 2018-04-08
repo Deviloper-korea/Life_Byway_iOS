@@ -82,8 +82,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="XWy-TO-EYV"/>
                     <connections>
-                        <outlet property="IdTextField" destination="0CK-Tr-r79" id="I7Y-Fr-e33"/>
-                        <outlet property="findUserInfo" destination="yVJ-uz-4UQ" id="K1S-FK-RVl"/>
                         <outlet property="findUserInfoButton" destination="yVJ-uz-4UQ" id="itA-23-mlM"/>
                         <outlet property="idTextField" destination="0CK-Tr-r79" id="HDg-uA-q02"/>
                         <outlet property="joinButton" destination="1kw-ye-wxS" id="tXn-gS-ZpM"/>
