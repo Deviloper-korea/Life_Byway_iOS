@@ -30,6 +30,7 @@ enum JoinError {
     }
     
     enum Password: ErrorMessagePresentable {
+        
         case notEqualPasswordCheck
         case length
         
@@ -42,16 +43,20 @@ enum JoinError {
     }
     
     enum Nickname: ErrorMessagePresentable {
+        
         case length
+        case duplicate
         
         var message: String {
             switch self {
             case .length: return "닉네임을 입력해주세요."
+            case .duplicate: return "중복된 닉네임입니다."
             }
         }
     }
     
     enum Email: ErrorMessagePresentable {
+        
         case regex
         
         var message: String {

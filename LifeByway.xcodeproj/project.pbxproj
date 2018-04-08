@@ -42,6 +42,7 @@
 		CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9A6207742C80049F718 /* LBLogger.swift */; };
 		CEFEF9A920774F430049F718 /* JoinDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9A820774F430049F718 /* JoinDataProvider.swift */; };
 		CEFEF9AB207757AB0049F718 /* Key.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF9AA207757AB0049F718 /* Key.json */; };
+		CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9AE2079384B0049F718 /* CommonError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		CEFEF9A6207742C80049F718 /* LBLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLogger.swift; sourceTree = "<group>"; };
 		CEFEF9A820774F430049F718 /* JoinDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinDataProvider.swift; sourceTree = "<group>"; };
 		CEFEF9AA207757AB0049F718 /* Key.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Key.json; sourceTree = "<group>"; };
+		CEFEF9AE2079384B0049F718 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 				CEED21BA20754A34006720CE /* Encrypt.swift */,
 				CEED21BE20754C50006720CE /* Regex.swift */,
 				CEFEF9A6207742C80049F718 /* LBLogger.swift */,
+				CEFEF9AE2079384B0049F718 /* CommonError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */,
 				B87AB288206A7F660090A69D /* PostViewController.swift in Sources */,
 				B87AB28C206A7F980090A69D /* SettingViewController.swift in Sources */,
+				CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */,
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
 				CEED21BF20754C50006720CE /* Regex.swift in Sources */,
 				B87AB275206A77B80090A69D /* BaseTabBarController.swift in Sources */,

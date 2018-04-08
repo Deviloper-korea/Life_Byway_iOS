@@ -31,20 +31,20 @@ class JoinModel {
             return JoinError.UserId.length
         }
         
-        guard joinInfo.password == joinInfo.passwordCheck else {
-            return JoinError.Password.notEqualPasswordCheck
-        }
-        
-        guard joinInfo.password.count >= 8 && joinInfo.password.count <= 16 else {
-            return JoinError.Password.length
-        }
-        
         guard joinInfo.nickname.isNotEmpty else {
             return JoinError.Nickname.length
         }
         
         guard Regex.email(joinInfo.email).validate() else {
             return JoinError.Email.regex
+        }
+        
+        guard joinInfo.password == joinInfo.passwordCheck else {
+            return JoinError.Password.notEqualPasswordCheck
+        }
+        
+        guard joinInfo.password.count >= 8 && joinInfo.password.count <= 16 else {
+            return JoinError.Password.length
         }
         
         return nil

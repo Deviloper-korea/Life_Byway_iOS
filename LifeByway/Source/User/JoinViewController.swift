@@ -52,7 +52,12 @@ extension JoinViewController {
         }
         
         JoinDataProvider.requestJoin(joinInfo: joinInfo) { error in
-            
+            guard error == nil else {
+                // Toast or Label message
+                LBLogger.debug(.minseob, error?.message)
+                return
+            }
+            // - TODO: 회원가입 성공
         }
     }
 }

@@ -12,27 +12,29 @@ struct NetworkRequestor {
     
     private static let manager = Alamofire.SessionManager.default
     
-    typealias Completion = ((Json?, Error?) -> Void)?
+    typealias StatusCode = Int
+    typealias Completion = ((StatusCode?, Json?, Error?) -> Void)?
     static func request(_ api: APIRouter, completion: Completion) {
         requestInfoLog(about: api)
         manager.session.configuration.timeoutIntervalForRequest = 15
         manager.request(api.requestUrl, method: api.endPoint.method, parameters: api.parameters, headers: api.headers)
         .validate()
         .responseJSON { response in
+            let statusCode = response.response?.statusCode
             switch response.result {
             case .success:
                 successLog(about: response)
                 if let data = response.data {
                     do {
                         let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
-                        completion?(json, nil)
+                        completion?(statusCode, json, nil)
                     } catch(let error) {
-                        completion?(nil, error)
+                        completion?(statusCode, nil, error)
                     }
                 }
             case .failure(let error):
                 failureLog(about: response)
-                completion?(nil, error)
+                completion?(statusCode, nil, error)
             }
         }
     }
@@ -50,24 +52,26 @@ struct NetworkRequestor {
             switch encodingResult {
             case .success(let upload, _, _):
                 upload.responseData { response in
+                    let statusCode = response.response?.statusCode
                     switch response.result {
                     case .success:
                         successLog(about: response)
                         if let data = response.data {
                             do {
                                 let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
-                                completion?(json, nil)
+                                let statusCode = response.response?.statusCode
+                                completion?(statusCode, json, nil)
                             } catch(let error) {
-                                completion?(nil, error)
+                                completion?(statusCode, nil, error)
                             }
                         }
                     case .failure(let error):
                         failureLog(about: response)
-                        completion?(nil, error)
+                        completion?(statusCode, nil, error)
                     }
                 }
             case .failure(let error):
-                completion?(nil, error)
+                completion?(nil, nil, error)
             }
         }
     }

@@ -44,9 +44,30 @@ struct JoinDataProvider {
 
 extension JoinDataProvider {
     
-    static func requestJoin(joinInfo: JoinInfo, completion: @escaping ((ErrorMessagePresentable) -> Void)) {
-        NetworkRequestor.requestUpload(JoinAPIRouter.join(joinInfo: joinInfo)) { data, error in
-            
+    static func requestJoin(joinInfo: JoinInfo, completion: @escaping ((ErrorMessagePresentable?) -> Void)) {
+        struct StatusCode {
+            static let success = 201
+            static let serverError = 500
+            static let duplicatedId = 501
+            static let duplicatedNickname = 502
+            static let queryError = 503
+        }
+        NetworkRequestor.requestUpload(JoinAPIRouter.join(joinInfo: joinInfo)) { statusCode, data, error in
+            if error == nil {
+                var errorMessage: ErrorMessagePresentable?
+                switch statusCode {
+                case StatusCode.success:
+                    errorMessage = nil
+                case StatusCode.serverError, StatusCode.queryError:
+                    errorMessage = ServerError.all
+                case StatusCode.duplicatedId:
+                    errorMessage = JoinError.UserId.duplicate
+                case StatusCode.duplicatedNickname:
+                    errorMessage = JoinError.Nickname.duplicate
+                default: break
+                }
+                completion(errorMessage)
+            }
         }
     }
 }
