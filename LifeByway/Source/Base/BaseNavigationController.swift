@@ -10,4 +10,13 @@ import UIKit
 
 class BaseNavigationController: UINavigationController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = true
+        }
+        navigationBar.barTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        navigationBar.shadowImage = UIImage()
+    }
 }
