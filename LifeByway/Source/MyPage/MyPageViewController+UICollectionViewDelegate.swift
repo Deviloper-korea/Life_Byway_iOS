@@ -18,9 +18,11 @@ extension MyPageViewController: JTAppleCalendarViewDelegate {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "Cell", for: indexPath) as! CalendarCell
         cell.dateLabel.text = cellState.text
         if cellState.date.normalFormat == Date().normalFormat {
-            cell.dateLabel.textColor = #colorLiteral(red: 1, green: 0.4103240967, blue: 0.4116775692, alpha: 1)
+            cell.dateLabel.textColor = #colorLiteral(red: 0.7326804996, green: 0.5657426715, blue: 0.7683830261, alpha: 1)
+            cell.dateLabel.font = UIFont.boldSystemFont(ofSize: 18)
         } else {
             cell.dateLabel.textColor = (cellState.dateBelongsTo == .thisMonth) ? #colorLiteral(red: 0.1999762356, green: 0.200016588, blue: 0.1999709308, alpha: 1) : #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            cell.dateLabel.font = UIFont.systemFont(ofSize: 17)
         }
         return cell
     }

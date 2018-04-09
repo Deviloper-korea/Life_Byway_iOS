@@ -88,7 +88,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fjP-wF-s0C" secondAttribute="height" multiplier="1.25" id="JFF-Xb-dhi"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="88B-h1-Ow7">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="88B-h1-Ow7">
                                     <size key="itemSize" width="65" height="65"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -155,7 +155,7 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Today">
-                                    <color key="titleColor" red="0.93169170619999997" green="0.4478269815" blue="0.43136215210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.70675013062954395" green="0.57226618922574068" blue="0.75550244756156415" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="moveTodayButtonTappedWithSender:" destination="pAx-YW-6ej" eventType="touchUpInside" id="Q2C-2r-eBV"/>
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTj-V6-r5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709.5" y="214.5"/>
+            <point key="canvasLocation" x="708" y="213.64317841079463"/>
         </scene>
         <!--My Page-->
         <scene sceneID="MYY-It-7Rl">
@@ -190,7 +190,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9W4-Fd-VZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182.40000000000001" y="214.99250374812596"/>
+            <point key="canvasLocation" x="22" y="214"/>
         </scene>
     </scenes>
 </document>
