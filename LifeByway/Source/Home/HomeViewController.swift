@@ -18,7 +18,6 @@ class HomeViewController: BaseViewController {
     let notification = NotificationCenter.default
     
     var commentListViewController: CommentListViewController?
-    var todayPage = 6
     var currentPage: Float = 6 {
         didSet {
             guard currentPage < 6 else { return }
@@ -31,15 +30,15 @@ class HomeViewController: BaseViewController {
         homeModel.reloadHandler = reloadMissions
         homeModel.loadMissions()
         
-        collectionView.scrollToItem(at: IndexPath(item: todayPage, section: 0), at: .centeredHorizontally, animated: false)
         collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         
         commentListViewController?.cellHeight = 80
-        commentListViewController?.commentModel.comments = mokComments
+//        commentListViewController?.commentModel.comments = mokComments
     }
     
     func reloadMissions() {
         collectionView.reloadData()
+        collectionView.scrollToItem(at: IndexPath(item: (homeModel.missions?.count ?? 1) - 1, section: 0), at: .centeredHorizontally, animated: false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

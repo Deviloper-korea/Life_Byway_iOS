@@ -25,15 +25,15 @@ class HomeModel {
     }
     
     func loadMissions() {
-        /*
+        
         HomeDataProvider.requestMissions(date: Date().normalFormat) { [weak self] error, missions in
             if error == nil {
                 self?.clearMissions()
                 self?.missions = missions
             }
         }
-        */
-        missions = mokMissions
+ 
+//        missions = mokMissions
     }
     
     func clearMissions() {
