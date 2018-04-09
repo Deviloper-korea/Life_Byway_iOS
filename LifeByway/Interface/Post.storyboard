@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Overviews-->
+        <!--Overview-->
         <scene sceneID="wxD-qd-doy">
             <objects>
                 <viewController id="Ur3-nL-GGk" customClass="PostViewController" customModule="LifeByway" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,20 +21,59 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RvR-jc-4Go">
                                 <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zsD-ji-oD0">
-                                    <size key="itemSize" width="375" height="117"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="zsD-ji-oD0">
+                                    <size key="itemSize" width="375" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iPE-FD-MUi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="iPE-FD-MUi" customClass="PostCell" customModule="LifeByway" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhX-Nc-Slu">
+                                                    <rect key="frame" x="20" y="15" width="27.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="14"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCy-gz-ihx">
+                                                    <rect key="frame" x="20" y="32" width="27.5" height="0.5"/>
+                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="0.5" id="BT9-P2-WfV"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subjects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-4S-KXW">
+                                                    <rect key="frame" x="20" y="37" width="76.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backBtn" translatesAutoresizingMaskIntoConstraints="NO" id="53q-8w-icN">
+                                                    <rect key="frame" x="344" y="39.5" width="11" height="22"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="gCy-gz-ihx" firstAttribute="leading" secondItem="GhX-Nc-Slu" secondAttribute="leading" id="1y2-yG-E4k"/>
+                                            <constraint firstItem="GhX-Nc-Slu" firstAttribute="top" secondItem="iPE-FD-MUi" secondAttribute="top" constant="15" id="8rL-EU-Wki"/>
+                                            <constraint firstItem="gCy-gz-ihx" firstAttribute="width" secondItem="GhX-Nc-Slu" secondAttribute="width" id="C7m-ci-Fy1"/>
+                                            <constraint firstItem="GhX-Nc-Slu" firstAttribute="leading" secondItem="iPE-FD-MUi" secondAttribute="leading" constant="20" id="ONs-Xt-Q7Q"/>
+                                            <constraint firstItem="XCO-4S-KXW" firstAttribute="centerY" secondItem="iPE-FD-MUi" secondAttribute="centerY" id="QpG-Pa-vkc"/>
+                                            <constraint firstAttribute="trailing" secondItem="53q-8w-icN" secondAttribute="trailing" constant="20" id="Sia-Ug-R4i"/>
+                                            <constraint firstItem="XCO-4S-KXW" firstAttribute="leading" secondItem="iPE-FD-MUi" secondAttribute="leading" constant="20" id="f7B-Nw-qK5"/>
+                                            <constraint firstItem="53q-8w-icN" firstAttribute="centerY" secondItem="iPE-FD-MUi" secondAttribute="centerY" id="sPv-x1-JWL"/>
+                                            <constraint firstItem="gCy-gz-ihx" firstAttribute="top" secondItem="GhX-Nc-Slu" secondAttribute="bottom" id="x4P-Q0-YN1"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="GhX-Nc-Slu" id="Tdq-7f-t7a"/>
+                                            <outlet property="subjectLabel" destination="XCO-4S-KXW" id="u8A-Gz-0QR"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -48,7 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fnt-Yw-WVY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Overviews" id="2hs-0b-3TJ"/>
+                    <navigationItem key="navigationItem" title="Overview" id="2hs-0b-3TJ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="RvR-jc-4Go" id="WJh-io-vbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8n-ct-fWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,4 +117,7 @@
             <point key="canvasLocation" x="182.40000000000001" y="214.99250374812596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backBtn" width="11" height="22"/>
+    </resources>
 </document>

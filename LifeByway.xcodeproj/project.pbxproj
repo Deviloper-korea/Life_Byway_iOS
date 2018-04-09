@@ -57,6 +57,11 @@
 		CEFEF9CA207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9C9207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift */; };
 		CEFEF9CD207A84DB0049F718 /* MokDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9CC207A84DB0049F718 /* MokDatas.swift */; };
 		CEFEF9CF207AA1FE0049F718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF9CE207AA1FE0049F718 /* Assets.xcassets */; };
+		CEFEF9D3207B51690049F718 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D2207B51690049F718 /* PostModel.swift */; };
+		CEFEF9D5207B54C30049F718 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D4207B54C30049F718 /* PostCell.swift */; };
+		CEFEF9D7207B55350049F718 /* PostDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D6207B55350049F718 /* PostDataProvider.swift */; };
+		CEFEF9D9207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */; };
+		CEFEF9DC207B58370049F718 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9DB207B58370049F718 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +117,11 @@
 		CEFEF9C9207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentListViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		CEFEF9CC207A84DB0049F718 /* MokDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokDatas.swift; sourceTree = "<group>"; };
 		CEFEF9CE207AA1FE0049F718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFEF9D2207B51690049F718 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		CEFEF9D4207B54C30049F718 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CEFEF9D6207B55350049F718 /* PostDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataProvider.swift; sourceTree = "<group>"; };
+		CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		CEFEF9DB207B58370049F718 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +197,7 @@
 				CEF64325207276230013AF2A /* Common */,
 				CEED21C020754DDE006720CE /* Extension */,
 				CEFEF9C4207A7E450049F718 /* Comments */,
+				CEFEF9DA207B581C0049F718 /* Value Object */,
 				CEFEF9CB207A84A90049F718 /* MokData */,
 			);
 			path = Source;
@@ -242,6 +253,10 @@
 			isa = PBXGroup;
 			children = (
 				B87AB287206A7F660090A69D /* PostViewController.swift */,
+				CEFEF9D2207B51690049F718 /* PostModel.swift */,
+				CEFEF9D4207B54C30049F718 /* PostCell.swift */,
+				CEFEF9D6207B55350049F718 /* PostDataProvider.swift */,
+				CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -327,6 +342,14 @@
 				CEFEF9CC207A84DB0049F718 /* MokDatas.swift */,
 			);
 			path = MokData;
+			sourceTree = "<group>";
+		};
+		CEFEF9DA207B581C0049F718 /* Value Object */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF9DB207B58370049F718 /* Mission.swift */,
+			);
+			path = "Value Object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +454,7 @@
 			files = (
 				B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */,
 				CEFEF9B12079C7680049F718 /* SNSAuthorizationManager.swift in Sources */,
+				CEFEF9D5207B54C30049F718 /* PostCell.swift in Sources */,
 				CEFEF9B5207A71F50049F718 /* HomeModel.swift in Sources */,
 				CEFEF9B7207A74CD0049F718 /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9CA207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift in Sources */,
@@ -440,8 +464,10 @@
 				CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */,
 				B87AB288206A7F660090A69D /* PostViewController.swift in Sources */,
 				B87AB28C206A7F980090A69D /* SettingViewController.swift in Sources */,
+				CEFEF9DC207B58370049F718 /* Mission.swift in Sources */,
 				CEFEF9B9207A74ED0049F718 /* MissionCell.swift in Sources */,
 				CEFEF9BB207A76B20049F718 /* HomeDataProvider.swift in Sources */,
+				CEFEF9D9207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */,
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
 				CEED21BF20754C50006720CE /* Regex.swift in Sources */,
@@ -456,12 +482,14 @@
 				CEFEF9BF207A79110049F718 /* Date+Extension.swift in Sources */,
 				CEED21C420754E1B006720CE /* Collection+Extension.swift in Sources */,
 				B87AB25A206A61F30090A69D /* AppDelegate.swift in Sources */,
+				CEFEF9D7207B55350049F718 /* PostDataProvider.swift in Sources */,
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
 				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
 				CEFEF9C6207A7EEB0049F718 /* CommentModel.swift in Sources */,
 				CEFEF9B3207A59390049F718 /* UserDefaultsKey.swift in Sources */,
 				CEED21BB20754A34006720CE /* Encrypt.swift in Sources */,
+				CEFEF9D3207B51690049F718 /* PostModel.swift in Sources */,
 				CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */,
 				B87AB270206A76A50090A69D /* BaseViewController.swift in Sources */,
 				CEFEF9BD207A78660049F718 /* HomeError.swift in Sources */,
