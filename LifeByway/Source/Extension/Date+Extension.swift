@@ -16,6 +16,12 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
+    var koreanFormat: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy년 M월 dd일"
+        return dateFormatter.string(from: self)
+    }
+    
     var month: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM"
