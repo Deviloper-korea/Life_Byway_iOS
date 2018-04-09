@@ -128,7 +128,7 @@
         <scene sceneID="bC4-Nu-ZlN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s9O-pS-EPW" customClass="BaseNavigationController" customModule="LifeByway" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="7Xe-0T-99N"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="menu_home" selectedImage="menu_home_solid" id="7Xe-0T-99N"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TIw-cT-geK">
@@ -145,4 +145,8 @@
             <point key="canvasLocation" x="182.40000000000001" y="214.99250374812596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu_home" width="50" height="50"/>
+        <image name="menu_home_solid" width="50" height="50"/>
+    </resources>
 </document>

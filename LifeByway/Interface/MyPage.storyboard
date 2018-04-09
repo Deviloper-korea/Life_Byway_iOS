@@ -261,7 +261,7 @@
         <scene sceneID="MYY-It-7Rl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BUB-NJ-hDL" customClass="BaseNavigationController" customModule="LifeByway" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Page" id="2fx-Fr-Yzt"/>
+                    <tabBarItem key="tabBarItem" title="My Page" image="menu_mylist" selectedImage="menu_mylist_solid" id="2fx-Fr-Yzt"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="C9D-59-ii6">
@@ -280,5 +280,7 @@
     </scenes>
     <resources>
         <image name="backBtn" width="11" height="22"/>
+        <image name="menu_mylist" width="50" height="50"/>
+        <image name="menu_mylist_solid" width="50" height="50"/>
     </resources>
 </document>
