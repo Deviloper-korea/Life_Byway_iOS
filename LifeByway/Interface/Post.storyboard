@@ -105,7 +105,7 @@
         <scene sceneID="sTM-vK-Vyt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mqa-I7-KH8" customClass="BaseNavigationController" customModule="LifeByway" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Overview" id="IRn-IJ-fVr"/>
+                    <tabBarItem key="tabBarItem" title="Overview" image="menu_list" selectedImage="menu_list_solid" id="IRn-IJ-fVr"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ocd-Y8-vj8">
@@ -124,5 +124,7 @@
     </scenes>
     <resources>
         <image name="backBtn" width="11" height="22"/>
+        <image name="menu_list" width="50" height="50"/>
+        <image name="menu_list_solid" width="50" height="50"/>
     </resources>
 </document>

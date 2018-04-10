@@ -63,6 +63,9 @@
 		CEFEF9D7207B55350049F718 /* PostDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D6207B55350049F718 /* PostDataProvider.swift */; };
 		CEFEF9D9207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */; };
 		CEFEF9DC207B58370049F718 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9DB207B58370049F718 /* Mission.swift */; };
+		CEFEF9DE207B611A0049F718 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */; };
+		CEFEF9E0207B634F0049F718 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9DF207B634F0049F718 /* CalendarCell.swift */; };
+		CEFEF9E2207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +127,9 @@
 		CEFEF9D6207B55350049F718 /* PostDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataProvider.swift; sourceTree = "<group>"; };
 		CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		CEFEF9DB207B58370049F718 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
+		CEFEF9DF207B634F0049F718 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPageViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEF9DE207B611A0049F718 /* JTAppleCalendar.framework in Frameworks */,
 				CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */,
 				CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */,
 				CE62F29A207D033E00414D2E /* SwiftyJSON.framework in Frameworks */,
@@ -248,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				B87AB284206A7F0E0090A69D /* MyPageViewController.swift */,
+				CEFEF9DF207B634F0049F718 /* CalendarCell.swift */,
+				CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				CE62F299207D033E00414D2E /* SwiftyJSON.framework */,
+				CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */,
 				CEED21BC20754BED006720CE /* CryptoSwift.framework */,
 				CE1662042074A3FC00F27ECE /* Alamofire.framework */,
 			);
@@ -442,6 +452,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JTAppleCalendar.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
@@ -464,6 +475,7 @@
 				CEFEF9B7207A74CD0049F718 /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9CA207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift in Sources */,
 				B87AB282206A7EA10090A69D /* HomeViewController.swift in Sources */,
+				CEFEF9E2207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9A920774F430049F718 /* JoinDataProvider.swift in Sources */,
 				B87AB285206A7F0E0090A69D /* MyPageViewController.swift in Sources */,
 				CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */,
@@ -492,6 +504,7 @@
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
 				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
 				CEFEF9C6207A7EEB0049F718 /* CommentModel.swift in Sources */,
+				CEFEF9E0207B634F0049F718 /* CalendarCell.swift in Sources */,
 				CEFEF9B3207A59390049F718 /* UserDefaultsKey.swift in Sources */,
 				CEED21BB20754A34006720CE /* Encrypt.swift in Sources */,
 				CEFEF9D3207B51690049F718 /* PostModel.swift in Sources */,
