@@ -7,13 +7,14 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 struct NetworkRequestor {
     
     private static let manager = Alamofire.SessionManager.default
     
     typealias StatusCode = Int
-    typealias Completion = ((StatusCode?, Json?, Error?) -> Void)?
+    typealias Completion = ((StatusCode?, JSON?, Error?) -> Void)?
     static func request(_ api: APIRouter, completion: Completion) {
         requestInfoLog(about: api)
         manager.session.configuration.timeoutIntervalForRequest = 15
@@ -25,12 +26,7 @@ struct NetworkRequestor {
             case .success:
                 successLog(about: response)
                 if let data = response.data {
-                    do {
-                        let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
-                        completion?(statusCode, json, nil)
-                    } catch(let error) {
-                        completion?(statusCode, nil, error)
-                    }
+                    completion?(statusCode, JSON(data), nil)
                 }
             case .failure(let error):
                 failureLog(about: response)
@@ -57,13 +53,8 @@ struct NetworkRequestor {
                     case .success:
                         successLog(about: response)
                         if let data = response.data {
-                            do {
-                                let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Json
-                                let statusCode = response.response?.statusCode
-                                completion?(statusCode, json, nil)
-                            } catch(let error) {
-                                completion?(statusCode, nil, error)
-                            }
+                            let statusCode = response.response?.statusCode
+                            completion?(statusCode, JSON(data), nil)
                         }
                     case .failure(let error):
                         failureLog(about: response)

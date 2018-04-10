@@ -9,13 +9,13 @@
 import Foundation
 
 let mokMissions: [Mission] = [
-    Mission(contents: "횡단보도 까만색만 걷기", date: "2018-04-03"),
-    Mission(contents: "부모님께 전화하기", date: "2018-04-04"),
-    Mission(contents: "친구 칭찬하기", date: "2018-04-05"),
-    Mission(contents: "만보 걷기", date: "2018-04-06"),
-    Mission(contents: "좋아하는 음악 듣기", date: "2018-04-07"),
-    Mission(contents: "친구 용서하기", date: "2018-04-08"),
-    Mission(contents: "횡단보도 흰색만 걷기", date: "2018-04-09")
+    Mission(id: 1, contents: "횡단보도 까만색만 걷기", date: "2018-04-03"),
+    Mission(id: 2, contents: "부모님께 전화하기", date: "2018-04-04"),
+    Mission(id: 3, contents: "친구 칭찬하기", date: "2018-04-05"),
+    Mission(id: 4, contents: "만보 걷기", date: "2018-04-06"),
+    Mission(id: 5, contents: "좋아하는 음악 듣기", date: "2018-04-07"),
+    Mission(id: 6, contents: "친구 용서하기", date: "2018-04-08"),
+    Mission(id: 7, contents: "횡단보도 흰색만 걷기", date: "2018-04-09")
 ]
 
 let mokComments: [Comment] = [

@@ -1,2 +1,4 @@
 github "Alamofire/Alamofire" "4.7.1"
+github "SwiftyJSON/SwiftyJSON" "4.0.0"
 github "krzyzanowskim/CryptoSwift" "0.9.0"
+github "patchthecode/JTAppleCalendar" "7.1.5"

@@ -15,4 +15,26 @@ extension Date {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter.string(from: self)
     }
+    
+    var koreanFormat: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy년 M월 dd일"
+        return dateFormatter.string(from: self)
+    }
+    
+    var month: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM"
+        return dateFormatter.string(from: self)
+    }
+}
+
+extension DateFormatter {
+    
+    var calendarFormatter: DateFormatter {
+        dateFormat = "yyyy-MM-dd"
+        locale = Calendar.current.locale
+        timeZone = Calendar.current.timeZone
+        return self
+    }
 }

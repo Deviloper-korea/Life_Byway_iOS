@@ -12,19 +12,16 @@ struct HomeDataProvider {
     
     enum HomeAPIRouter: APIRouter {
         
-        case missions(date: String)
+        case missions
         
         var endPoint: EndPoint {
             switch self {
-            case .missions: return EndPoint(path: "/home/byDate", method: .post)
+            case .missions: return EndPoint(path: "/home/byDate", method: .get)
             }
         }
         
         var parameters: Parameters? {
-            switch self {
-            case .missions(let date):
-                return ["date": date]
-            }
+            return nil
         }
     }
 }
@@ -38,7 +35,7 @@ extension HomeDataProvider {
             static let nothingSubject = 501
             static let queryError = 503
         }
-        NetworkRequestor.request(HomeAPIRouter.missions(date: date)) { statusCode, data, error in
+        NetworkRequestor.request(HomeAPIRouter.missions) { statusCode, data, error in
             if error == nil {
                 switch statusCode {
                 case StatusCode.serverError, StatusCode.queryError:
@@ -48,6 +45,15 @@ extension HomeDataProvider {
                 default: break
                 }
                 
+                do {
+                    if let jsonString = data?["data"].debugDescription {
+                        let jsonData = jsonString.data(using: .utf8) ?? Data()
+                        let missions = try JSONDecoder().decode([Mission].self, from: jsonData)
+                        completion(nil, missions)
+                    }
+                } catch(let error) {
+                    LBLogger.debug(.common, error.localizedDescription)
+                }
             }
         }
     }

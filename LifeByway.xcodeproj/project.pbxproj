@@ -28,6 +28,9 @@
 		CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662062074AA6800F27ECE /* APIRouter.swift */; };
 		CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662082074AAAA00F27ECE /* EndPoint.swift */; };
 		CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */; };
+		CE62F29A207D033E00414D2E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62F299207D033E00414D2E /* SwiftyJSON.framework */; };
+		CE62F29C207D138D00414D2E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62F29B207D138D00414D2E /* Review.swift */; };
+		CE62F2A0207D184700414D2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62F29F207D184700414D2E /* User.swift */; };
 		CEED21B720752E65006720CE /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED21B620752E65006720CE /* Join.storyboard */; };
 		CEED21BB20754A34006720CE /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21BA20754A34006720CE /* Encrypt.swift */; };
 		CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEED21BC20754BED006720CE /* CryptoSwift.framework */; };
@@ -57,6 +60,14 @@
 		CEFEF9CA207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9C9207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift */; };
 		CEFEF9CD207A84DB0049F718 /* MokDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9CC207A84DB0049F718 /* MokDatas.swift */; };
 		CEFEF9CF207AA1FE0049F718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF9CE207AA1FE0049F718 /* Assets.xcassets */; };
+		CEFEF9D3207B51690049F718 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D2207B51690049F718 /* PostModel.swift */; };
+		CEFEF9D5207B54C30049F718 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D4207B54C30049F718 /* PostCell.swift */; };
+		CEFEF9D7207B55350049F718 /* PostDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D6207B55350049F718 /* PostDataProvider.swift */; };
+		CEFEF9D9207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */; };
+		CEFEF9DC207B58370049F718 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9DB207B58370049F718 /* Mission.swift */; };
+		CEFEF9DE207B611A0049F718 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */; };
+		CEFEF9E0207B634F0049F718 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9DF207B634F0049F718 /* CalendarCell.swift */; };
+		CEFEF9E2207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +94,9 @@
 		CE1662062074AA6800F27ECE /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CE1662082074AAAA00F27ECE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestor.swift; sourceTree = "<group>"; };
+		CE62F299207D033E00414D2E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		CE62F29B207D138D00414D2E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		CE62F29F207D184700414D2E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEED21B620752E65006720CE /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
 		CEED21BA20754A34006720CE /* Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
 		CEED21BC20754BED006720CE /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
@@ -112,6 +126,14 @@
 		CEFEF9C9207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentListViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		CEFEF9CC207A84DB0049F718 /* MokDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokDatas.swift; sourceTree = "<group>"; };
 		CEFEF9CE207AA1FE0049F718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFEF9D2207B51690049F718 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		CEFEF9D4207B54C30049F718 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CEFEF9D6207B55350049F718 /* PostDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataProvider.swift; sourceTree = "<group>"; };
+		CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		CEFEF9DB207B58370049F718 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
+		CEFEF9DF207B634F0049F718 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyPageViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +141,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEF9DE207B611A0049F718 /* JTAppleCalendar.framework in Frameworks */,
 				CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */,
 				CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */,
+				CE62F29A207D033E00414D2E /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +211,7 @@
 				CEF64325207276230013AF2A /* Common */,
 				CEED21C020754DDE006720CE /* Extension */,
 				CEFEF9C4207A7E450049F718 /* Comments */,
+				CEFEF9DA207B581C0049F718 /* Value Object */,
 				CEFEF9CB207A84A90049F718 /* MokData */,
 			);
 			path = Source;
@@ -234,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				B87AB284206A7F0E0090A69D /* MyPageViewController.swift */,
+				CEFEF9DF207B634F0049F718 /* CalendarCell.swift */,
+				CEFEF9E1207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -242,6 +269,10 @@
 			isa = PBXGroup;
 			children = (
 				B87AB287206A7F660090A69D /* PostViewController.swift */,
+				CEFEF9D2207B51690049F718 /* PostModel.swift */,
+				CEFEF9D4207B54C30049F718 /* PostCell.swift */,
+				CEFEF9D6207B55350049F718 /* PostDataProvider.swift */,
+				CEFEF9D8207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -270,6 +301,8 @@
 		CE1662032074A3FC00F27ECE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE62F299207D033E00414D2E /* SwiftyJSON.framework */,
+				CEFEF9DD207B61190049F718 /* JTAppleCalendar.framework */,
 				CEED21BC20754BED006720CE /* CryptoSwift.framework */,
 				CE1662042074A3FC00F27ECE /* Alamofire.framework */,
 			);
@@ -327,6 +360,16 @@
 				CEFEF9CC207A84DB0049F718 /* MokDatas.swift */,
 			);
 			path = MokData;
+			sourceTree = "<group>";
+		};
+		CEFEF9DA207B581C0049F718 /* Value Object */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF9DB207B58370049F718 /* Mission.swift */,
+				CE62F29B207D138D00414D2E /* Review.swift */,
+				CE62F29F207D184700414D2E /* User.swift */,
+			);
+			path = "Value Object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +457,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JTAppleCalendar.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
@@ -431,21 +476,27 @@
 			files = (
 				B87AB291206A811B0090A69D /* LoginViewController.swift in Sources */,
 				CEFEF9B12079C7680049F718 /* SNSAuthorizationManager.swift in Sources */,
+				CEFEF9D5207B54C30049F718 /* PostCell.swift in Sources */,
 				CEFEF9B5207A71F50049F718 /* HomeModel.swift in Sources */,
 				CEFEF9B7207A74CD0049F718 /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9CA207A7FEA0049F718 /* CommentListViewController+UICollectionViewDelegate.swift in Sources */,
 				B87AB282206A7EA10090A69D /* HomeViewController.swift in Sources */,
+				CEFEF9E2207B64810049F718 /* MyPageViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9A920774F430049F718 /* JoinDataProvider.swift in Sources */,
 				B87AB285206A7F0E0090A69D /* MyPageViewController.swift in Sources */,
 				CEFEF9A7207742C80049F718 /* LBLogger.swift in Sources */,
 				B87AB288206A7F660090A69D /* PostViewController.swift in Sources */,
 				B87AB28C206A7F980090A69D /* SettingViewController.swift in Sources */,
+				CEFEF9DC207B58370049F718 /* Mission.swift in Sources */,
 				CEFEF9B9207A74ED0049F718 /* MissionCell.swift in Sources */,
 				CEFEF9BB207A76B20049F718 /* HomeDataProvider.swift in Sources */,
+				CEFEF9D9207B57200049F718 /* PostViewController+UICollectionViewDelegate.swift in Sources */,
 				CEFEF9AF2079384B0049F718 /* CommonError.swift in Sources */,
 				B87AB273206A77730090A69D /* BaseNavigationController.swift in Sources */,
 				CEED21BF20754C50006720CE /* Regex.swift in Sources */,
+				CE62F29C207D138D00414D2E /* Review.swift in Sources */,
 				B87AB275206A77B80090A69D /* BaseTabBarController.swift in Sources */,
+				CE62F2A0207D184700414D2E /* User.swift in Sources */,
 				CEF6432420726F680013AF2A /* APIConfiguration.swift in Sources */,
 				CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */,
 				CEED21C220754DF7006720CE /* String+Extension.swift in Sources */,
@@ -456,12 +507,15 @@
 				CEFEF9BF207A79110049F718 /* Date+Extension.swift in Sources */,
 				CEED21C420754E1B006720CE /* Collection+Extension.swift in Sources */,
 				B87AB25A206A61F30090A69D /* AppDelegate.swift in Sources */,
+				CEFEF9D7207B55350049F718 /* PostDataProvider.swift in Sources */,
 				CEF64327207276610013AF2A /* ResolutionCenter.swift in Sources */,
 				B87AB294206A813B0090A69D /* JoinViewController.swift in Sources */,
 				CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */,
 				CEFEF9C6207A7EEB0049F718 /* CommentModel.swift in Sources */,
+				CEFEF9E0207B634F0049F718 /* CalendarCell.swift in Sources */,
 				CEFEF9B3207A59390049F718 /* UserDefaultsKey.swift in Sources */,
 				CEED21BB20754A34006720CE /* Encrypt.swift in Sources */,
+				CEFEF9D3207B51690049F718 /* PostModel.swift in Sources */,
 				CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */,
 				B87AB270206A76A50090A69D /* BaseViewController.swift in Sources */,
 				CEFEF9BD207A78660049F718 /* HomeError.swift in Sources */,

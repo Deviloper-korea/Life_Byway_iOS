@@ -10,4 +10,18 @@ import UIKit
 
 class PostViewController: BaseViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    let postModel = PostModel.shared
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        postModel.reloadHandler = reloadPost
+        postModel.loadPost()
+    }
+    
+    func reloadPost() {
+        collectionView.reloadData()
+    }
 }
+

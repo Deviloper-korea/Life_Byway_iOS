@@ -8,11 +8,6 @@
 
 import Foundation
 
-struct Mission {
-    var contents: String
-    var date: String
-}
-
 class HomeModel {
     
     static let shared = HomeModel()
