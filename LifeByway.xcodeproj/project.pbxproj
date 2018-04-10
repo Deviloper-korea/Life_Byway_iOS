@@ -28,6 +28,7 @@
 		CE1662072074AA6800F27ECE /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662062074AA6800F27ECE /* APIRouter.swift */; };
 		CE1662092074AAAA00F27ECE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1662082074AAAA00F27ECE /* EndPoint.swift */; };
 		CE16620B2074AB4600F27ECE /* NetworkRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */; };
+		CE62F29A207D033E00414D2E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62F299207D033E00414D2E /* SwiftyJSON.framework */; };
 		CEED21B720752E65006720CE /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED21B620752E65006720CE /* Join.storyboard */; };
 		CEED21BB20754A34006720CE /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED21BA20754A34006720CE /* Encrypt.swift */; };
 		CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEED21BC20754BED006720CE /* CryptoSwift.framework */; };
@@ -88,6 +89,7 @@
 		CE1662062074AA6800F27ECE /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CE1662082074AAAA00F27ECE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		CE16620A2074AB4600F27ECE /* NetworkRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestor.swift; sourceTree = "<group>"; };
+		CE62F299207D033E00414D2E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		CEED21B620752E65006720CE /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
 		CEED21BA20754A34006720CE /* Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
 		CEED21BC20754BED006720CE /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			files = (
 				CE1662052074A3FC00F27ECE /* Alamofire.framework in Frameworks */,
 				CEED21BD20754BED006720CE /* CryptoSwift.framework in Frameworks */,
+				CE62F29A207D033E00414D2E /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +288,7 @@
 		CE1662032074A3FC00F27ECE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE62F299207D033E00414D2E /* SwiftyJSON.framework */,
 				CEED21BC20754BED006720CE /* CryptoSwift.framework */,
 				CE1662042074A3FC00F27ECE /* Alamofire.framework */,
 			);
@@ -437,6 +441,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (

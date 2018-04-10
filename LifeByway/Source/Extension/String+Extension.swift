@@ -12,4 +12,10 @@ extension String {
     var isNotEmpty: Bool {
         return !isEmpty
     }
+    
+    var toDate: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        return dateFormatter.date(from: self) ?? Date()
+    }
 }

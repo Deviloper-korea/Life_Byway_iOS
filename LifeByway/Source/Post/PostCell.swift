@@ -15,7 +15,7 @@ class PostCell: UICollectionViewCell {
     
     var mission: Mission? {
         didSet {
-            dateLabel.text = mission?.date
+            dateLabel.text = mission?.date.toDate.normalFormat
             subjectLabel.text = mission?.contents
         }
     }

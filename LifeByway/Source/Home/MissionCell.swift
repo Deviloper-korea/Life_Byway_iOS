@@ -18,7 +18,7 @@ class MissionCell: UICollectionViewCell {
     var mission: Mission? {
         didSet {
             missionLabel.text = mission?.contents
-            dateLabel.text = mission?.date
+            dateLabel.text = mission?.date.toDate.normalFormat
         }
     }
 }

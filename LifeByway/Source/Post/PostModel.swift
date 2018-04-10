@@ -22,7 +22,7 @@ class PostModel {
     func loadPost() {
         PostDataProvider.requestPost { [weak self] error, missions in
             if error == nil {
-                
+                self?.missions = missions
             }
         }
     }
