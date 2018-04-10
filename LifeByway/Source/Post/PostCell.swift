@@ -15,7 +15,7 @@ class PostCell: UICollectionViewCell {
     
     var mission: Mission? {
         didSet {
-            dateLabel.text = mission?.date.toDate.normalFormat
+            dateLabel.text = "\(mission?.date.toDate.koreanFormat ?? "")의 미션"
             subjectLabel.text = mission?.contents
         }
     }
